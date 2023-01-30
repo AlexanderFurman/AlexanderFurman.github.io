@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Motion Planning Course</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+				<header id="header" class="alt style2">
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html#banner">Return to Main Site</a></li>
+					<li><a href="#intro">About</a></li>
+					<li><a href="#two">Projects</a></li>
+					<li><a href="#three">Skills Used/Learned</a></li>
+				</ul>
+			</nav>
+
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/new/motion.jpeg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Motion Planning Course</h1>
+							</header>
+							<div class="content">
+								<p>This course covered many topics in depth, including exact methods, sampling-based methods, and heuristic search</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<section id="intro">
+								<div class="inner">
+									<header class="major">
+										<h2>In-Depth Exposure to Motion Planning</h2>
+									</header>
+									<p>This is by far one of my favourite courses taken during my undergraduate degree.
+										 The course material provided a good mix between theory and practice,
+										  and many different kinds of algorithms were explored in detail. Below are the projects from the course:</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<div class="inner">
+									<header class="major">
+										<h2>Projects</h2>
+										</header>
+								</div>
+								<section>
+									<a class="image">
+										<img src="images/motion_planning/vis_graph.jpeg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Minkowsky Sums & Visibility Graphs</h3>
+											</header>
+											<p>Visibility graphs are a graph representation of shapes in a plane, 
+												where each point is connected to visible points.
+												Paired with Minkowski Sums, they can be used to plan a path for a robot 
+												Anayzing the algorithms reveal that visibility graphs used in motion planning
+												 are limited to convex shapes in low dimensions.
+											</p>
+											<ul class="actions">
+												<li><a href="docs/Exact_Methods.pdf" class="button">Learn more</a></li>
+												<li style="margin-top: 10px;"><a href="https://github.com/AlexanderFurman/Motion-Planning-HW-1/blob/main/HW1.py" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/motion_planning/astar_rrt.jpeg" alt="" style="width: 100%; height: 70%; float: right;" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Weighted A*, RRT, RRT*</h3>
+											</header>
+											<p>A* is a best-first search algorithm that combines the benefits of both breadth-first search and uniform-cost search. Sampling-based methods, such as RRT and RRT*,
+												 generate random samples and build a tree to connect the start and goal. 
+												 A* is efficient with good heuristics but sampling-based methods are robust and flexible in complex unknown environments. 
+												</p>
+											<p>Data analysis on multiple runs allows us to understand how different hyper-parameters affect the runtime of the algorithms, as well as the quality of solution</p>
+											<ul class="actions">
+												<li><a href="docs/sample.pdf" class="button">Learn more</a></li>
+												<li style="margin-top: 10px;"><a href="https://github.com/AlexanderFurman/Motion-Planning-HW-2/tree/main/code_and_figures/Code" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/motion_planning/rrt_robot.gif" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Manipulation & Inspection planning</h3>
+											</header>
+											<p>Coming Soon</p>
+											<!-- <ul class="actions">
+												<li><a href="#" class="button">Learn more</a></li>
+											</ul> -->
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/motion_planning/final.jpeg" alt="" style="width: 70%; height: auto; float: right;" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Final Project: Task Inspection Planning</h3>
+											</header>
+											<p>Coming Soon</p>
+											<!-- <ul class="actions">
+												<li><a href="#" class="button">Learn more</a></li>
+											</ul> -->
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+						<section id="three">
+							<div class="inner">
+								<header class="major">
+									<h2>Skills Used/Learned</h2>
+								</header>
+								<ul>
+									<li>In-depth algorithm design and implementation</li>
+									<li>Time complexity analysis of algorithms</li>
+									<li>Use of Python and Object Oriented Programming</li>
+									<li>Knowledge in Data Structures</li>
+								  </ul>
+							</div>
+						</section>
+							
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
