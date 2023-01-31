@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sensor Integrated Gripper</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+				<header id="header" class="alt style2">
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html#banner">Return to Main Site</a></li>
+					<li><a href="#intro">About</a></li>
+					<li><a href="#two">Project Timeline</a></li>
+					<li><a href="#three">Skills Used/Learned</a></li>
+					<li><a href="#github">Learn More</a></li>
+				</ul>
+			</nav>
+
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/gripper/gripper.jpeg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Sensor Integrated Robotic Gripper</h1>
+							</header>
+							<div class="content">
+								<p> Design, Manufacturing, Electronics, and Software integration of robotic gripper
+								</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<section id="intro">
+								<div class="inner">
+									<header class="major">
+										<h2>Multidisciplinary Robotics Project</h2>
+									</header>
+									<p>I developed a sensor-integrated pneumatic gripper,
+										 overseeing all stages from concept to manufacturing
+										  and software integration with a robotic arm.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<div class="inner">
+									<header class="major">
+										<h2>Project Timeline</h2>
+										</header>
+								</div>
+								<section>
+									<a class="image">
+										<img src="images/gripper/first_gripper.jpeg" alt="" data-position="right" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Early Stage Researching & Prototyping</h3>
+											</header>
+											<p>Tasked to create a pneumatic gripper, I began researching pneumatics and grasping methods. 
+												Multiple ideas were considered - however a very straightforward pneumatic 'finger' design was chosen.
+												 This allowed me to focus on ensuring the pneumatic system was functional, and that the software integration 
+												 was successful.
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="https://raw.githubusercontent.com/AlexanderFurman/Final-Project/main/Demos/initial_gripper_test.gif" alt="" style="width: auto; height: auto; float: right;" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Prototype Demo</h3>
+											</header>
+											<p>Testing proved that the pneumatic and software systems were working.
+												 It was found that although the 'finger' design was overall successful, 
+												it ran the risk of dropping an item when grasping it at a location far from its center of mass.
+												</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/gripper/drawings.jpg" alt="" style="width: auto; height: 30%;  float: right;" />
+									</a>
+									<!-- <a class="image">
+										<img src="images/gripper/gripper_drawing.jpeg" alt="" style="width: auto; height: 20%;  float: right;" />
+									</a> -->
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Second Design Iteration and New Details</h3>
+											</header>
+											<p>There was now a computer vision algorithm which would detect an object, and return the best location to attempt to grasp the object.
+												 In order to deal with certain inaccuracies, I was tasked with changing the design to have the ability to 'self-correct' 
+												 its pose in the event it is in the wrong location (More on this in the <a href="#github">presentation</a>). 
+											</p>
+											<p>Given the shortcomings of the previous design, it was decided to integrate a second "finger"
+												into the design, which would help stabilize the grapsed object. Furthermore, 
+												in order to better understand the gripper's position relative to the grasped object, sensors were to be added to the design</p>
+
+											<p>After much thought, the final design of each finger consisted of a plunger-like design, connected to a linear potentiometer.
+												 This allows the gripper to "feel" what it is touching. The fingers  were connected to each other via a belt-driven pulley, 
+												 which allowed for change in distance between the fingers. The pneumatic system was
+												also updated to allow for vacuum in either one or both fingers, depending on the orientation of the object to be grasped. Finally, a vacuum sensor 
+												was added to ensure adequate force can be provided by the gripper before lifting.
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/gripper/gripper.jpeg" alt=""  data-position="left" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Integration</h3>
+											</header>
+											<p>After finding the correct sensors, and ordering/3D-printing/manufacturing all required mechanical parts, the gripper was assembled.
+												During this stage, all parts went through verification to ensure they worked correctly.
+												 This caught a few flaws in the 3D prints, which led to some small redesigns.
+											</p>
+											<p>Eventually, all parts worked, and the gripper was ready for a test with the robotic arm.</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="https://raw.githubusercontent.com/AlexanderFurman/Final-Project/main/Demos/gripper_test.gif" alt="" style="width: auto; height: auto;;" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Demo of New Gripper</h3>
+											</header>
+											<p>The testing of the gripper was successful, and the motor, pneumatics, & sensors all behaved as expected.
+												As with any complex mechatronics project, there are things improve. However the overall goal was realized: a pneumatic gripper 
+												which has the sensor-integration necessary for performing pose-correction.
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+						<section id="three">
+							<div class="inner">
+								<header class="major">
+									<h2>Skills Used/Learned</h2>
+								</header>
+								<ul>
+									<li>Using Robot Operating System (ROS), including creating nodes, publishers & subscribers.</li>
+									<li>Programming using Arduino and Python</li>
+									<li>Using the ROS MoveIt package for motion planning of robot arm</li>
+									<li>Using Rosserial to interface with microprocessor from a computer</li>
+									<li>Experience with Linux environment</li>
+									<li>Using SolidWorks for rapid prototyping</li>
+									<li>Experience with software and hardware verification</li>
+									<li>Using 3D-Printing and traditional manufacturing methods</li>
+									<li>Experience researching technologies, including sensors, electronic components, & pneumatics</li>
+								</ul>
+							</div>
+						</section>
+							
+
+					</div>
+
+				<!-- github -->
+				<!-- <section id="github">
+					<div class="inner">
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<h2>Learn More</h2>
+									<span class="icon brands alt fa-github" style="margin-top: 10px;"></span>
+									<a href="https://github.com/AlexanderFurman/Final-Project">Robot Gripper Repo</a>
+									<a href="docs/final_presentation.pdf">Presentation PDF</a>
+								</div>
+							</section>
+					</div>
+				</section> -->
+
+				<section id="github">
+					<div class="inner">
+					  <section class="split">
+						<section>
+						  <div class="contact-method">
+							<h2>Learn More</h2>
+							<span class="icon brands alt fa-github" style="margin-top: 10px;"></span>
+							<a href="https://github.com/AlexanderFurman/Final-Project">Robot Gripper Repo</a><br>
+							<a href="docs/final_presentation.pdf">Presentation PDF</a><br>
+						  </div>
+						</section>
+					  </section>
+					</div>
+				  </section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
